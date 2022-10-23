@@ -5,13 +5,13 @@ use Illuminate\Http\Request;
 use App\Models\User;
 
 Route::get('/', function () {
-    return view('home', ["headerSelected" => 0]);
+    return view('home');
 });
 Route::get('/requirements', function () {
-    return view('requirements', ["headerSelected" => 1]);
+    return view('requirements');
 });
 Route::get('/register', function () {
-    return view('register', ["headerSelected" => 2]);
+    return view('register');
 });
 Route::post('/register', function (Request $request) {
     User::create([
@@ -25,9 +25,9 @@ Route::post('/register', function (Request $request) {
         "email" => $request->email
     ]);
     
-    return view('register', ["headerSelected" => 2]);
+    return view('register');
 });
 
 Route::get('/login', function () {
-    return view('login', ["headerSelected" => 3]);
+    return view('login');
 });
