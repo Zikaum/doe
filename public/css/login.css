@@ -4,26 +4,15 @@
     padding: 0px 15px 0px 15px;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+button p {
+    padding-left: 4px;
+    width: auto;
 }
-form div {
-    display: flex;
-    flex-direction: row;
-}
+
 p{
     display: flex;
     margin: 3px;
     width: 100%;
-}
-.long_input{
-    width: 100%;
-}
-.short_input{
-    width: 30px;
 }
 
 input {
@@ -33,13 +22,37 @@ input {
     width: 100%;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 600px;
+}
+form div {
+    display: flex;
+    flex-direction: row;
+}
+
 label {
     font-weight: bold;
     margin-right: 2px;
     font-size: 15pt;
 }
 
+h1 {
+    color: #949494;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 28pt;
+}
+
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     width: 195px;
     height: 55px;
     border: 0;
@@ -56,21 +69,4 @@ button:hover {
 }
 button:focus {
     background-color: #F02525;
-}
-
-h1 {
-    color: #949494;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 28pt;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
