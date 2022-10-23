@@ -14,18 +14,9 @@
 
   <div class="main">
 
-
-    <div style="display: flex; flex-direction: column; margin: px 3px 0px 3px;">
-      <div style="height: 40px; background-color: #EEBBB7; margin-bottom: 6px;"></div>
-      <div style="background-color: #D9D9D9; padding: 7px; width: 300px;">
-        <p>LOCAL: </p>
-        <p>QUANTIDADE DE BOLSAS: </p>
-        <p>MOTIVO: </p>
-        <div>
-          <img src="{{asset('images/Doe.png')}}" width="150" alt="">
-        </div>
-      </div>
-    </div>
+    @for ($i = 0; $i < 7; $i++)
+      @livewire('post', ['data' => ["local" => "local", "quant" => "xx", "motivo" => "porque sim"]])
+    @endfor
 
     
   </div>
