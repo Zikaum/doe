@@ -14,15 +14,15 @@
         <img id="header-image" src="{{asset('images/DoeAgora.png')}}" alt="Doe Agora"/>
         <nav>
             <div style="display: flex; flex: 1; justify-content: center;">
-                <a href="/">INICIO</a>
-                <a href="/requirements">DESEJA DOAR?</a>
+                <a @if ($headerSelected == 0) class="a_selected" @endif href="/">INICIO</a>
+                <a @if ($headerSelected == 1) class="a_selected" @endif href="/requirements">DESEJA DOAR?</a>
             </div>
             <div class="login">
-                <div>
+                <div @if ($headerSelected == 2) class="a_selected" @endif>
                     <img width="40" src="{{asset('images/GroupIcon.png')}}" alt="Cadastre-se" />
                     <a href="/register">CADASTRE-SE</a>
                 </div>
-                <div class="a_selected">
+                <div @if ($headerSelected == 3) class="a_selected" @endif>
                     <img width="30px" src="{{asset('images/ProfileIcon.png')}}" alt="Entre" />
                     <a href="/login">ENTRAR</a>
                 </div>
