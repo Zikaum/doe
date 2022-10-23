@@ -24,7 +24,6 @@ nav a {
 
 a, a:visited, a:hover, a:active {
     color: inherit;
-    margin: 0px 15px 0px 15px;
 }
 .a_selected {
     background-color: #F02525;

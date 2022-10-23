@@ -31,3 +31,15 @@ Route::post('/register', function (Request $request) {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/personal_space', function () {
+    return view('personal_space', ["optionSelected" => 0]);
+});
+Route::get('/personal_space/my_donations', function () {
+    return view('personal_space', ["optionSelected" => 0]);
+});
+Route::get('/personal_space/my_requests', function () {
+    return view('personal_space', ["optionSelected" => 1]);
+});
+Route::get('/personal_space/make_request', function () {
+    return view('personal_space', ["optionSelected" => 2]);
+});

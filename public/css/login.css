@@ -53,8 +53,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 195px;
-    height: 55px;
+    padding: 10px 15px 10px 15px;
     border: 0;
     border-radius: 10px;
     background-color: #F02525;

@@ -14,7 +14,7 @@
 
   <div class="main">
 
-    @for ($i = 0; $i < 7; $i++)
+    @for ($i = 0; $i < 5; $i++)
       @livewire('post', ['data' => ["local" => "local", "quant" => "xx", "motivo" => "porque sim"]])
     @endfor
 
