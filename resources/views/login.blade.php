@@ -13,6 +13,7 @@
       <div class="main">
           <div style="display: flex; justify-content: center; align-items: center;">
             <form action="/login" method="POST">
+                @csrf
                 <h1>LOGIN</h1>
                 <p>
                     <label for="email">Email: </label>
